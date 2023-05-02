@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="formulario.css">
+    <title>Formulários</title>
+</head>
+<body>
+        <header class="cabecalho">
+            <h1 class="title">Qual área da sua saúde você gostaria e melhorar?</h1>
+            <p class="subtitle">complete suas informações</p>
+        </header>
+        <main>
+            <form action="https://formsubmit.co/emporionaturs@gmail.com" method="post">
+                <fieldset class="dados">
+                    <div class="campo">
+                        <label for="nome"><strong>Nome:</strong></label>
+                        <input type="text" name="nome" id="nome" required>
+                    </div>
+                    <div class="campo">
+                        <label for="sobrenome"><strong>Sobrenome:</strong> </label>
+                        <input type="text" name="sobrenome" id="sobrenome" required>
+                    </div>
+                    <div class="campo">
+                        <label for="email"><strong>E-mail:</strong></label>
+                        <input type="email" name="email" id="email" required>
+                    </div>
+                </fieldset>
+            
+                <div class="campo">
+                    <label><strong>Sexo:</strong></label>
+                    <label for="feminino">
+                        <input type="radio" name="feminino" value="feminino" checked> Feminino
+                    </label>
+                    <label for="masculino">
+                        <input type="radio" name="masculino" value="masculino"> Maculino
+                    </label>
+                </div>
+                <div class="campo">
+                    <label for="idade"><strong>Qual a sua idade?</strong></label>
+                    <input type="number" name="idade" value="idade">
+                    <label for="peso"><strong>Qual é o seu peso?</strong></label>
+                    <input type="number" name="peso" value="peso">
+                    <label for="altura"><strong>Qual é a sua altura?</strong></label>
+                    <input type="number" name="altura" value="altura">
+                </div>
+                <fieldset class="grupo">
+                    <div class="check">
+                        <label><strong>Quais destes alimentos você constuma consumir?</strong></label><br><br>
+                        <div>
+                            <input type="checkbox" id="leite" name="leite" value="leite">
+                            <label for="leite">Leite</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="trigo" name="trigo" value="trigo">
+                            <label for="trigo">Alimentos com trigo</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="embutidos" name="embutidos" value="embutidos">
+                            <label for="embutidos">embutidos(salame/presunto/mortadela)</label>
+                        </div>
+                    </div>
+                    <div class="enviar">
+                        <br>
+                        <label><strong>Escreva aqui qual área da sua saúde você gostaria de melhorar:</strong></label><br><br>
+                        <textarea name="experiencia" id="experiencia" rows="6" style="width: 26em" placeholder="Ex: tenho muitas dores musculares e nas articulações."></textarea>
+                        <button class="botao" type="submit">Concluído</button>
+                    </div>
+                </fieldset>
+            </form>
+        </main>
+
+        <footer>
+
+        </footer>
+   
+    
+</body>
+</html>
